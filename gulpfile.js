@@ -19,7 +19,7 @@ gulp.task('ts-compile', function(){
 
     return tsResult.js
         .pipe(sourcemaps.write({includeContent:false,sourceRoot:''}))
-        .pipe(gulp.dest(''));
+        .pipe(gulp.dest('./wwwroot/app'));
  });
 
 //  gulp.task('ts-compile', function(){
